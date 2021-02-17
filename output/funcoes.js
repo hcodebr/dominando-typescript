@@ -1,10 +1,12 @@
 "use strict";
-function mostrarMensagem(mensagem) {
-    return mensagem;
+function mostrarMensagem(texto) {
+    console.log(texto);
+    return true;
 }
-console.log(mostrarMensagem("Aprendendo funções com TypeScript"));
-console.log(mostrarMensagem(123456));
-const show = (code) => {
-    return "";
+console.log(mostrarMensagem("Hcode"));
+console.log(mostrarMensagem(100));
+console.log(mostrarMensagem({ url: "https://hcode.com.br" }));
+const show = (codigo) => {
+    return new Date();
 };
 //# sourceMappingURL=funcoes.js.map

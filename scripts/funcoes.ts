@@ -1,12 +1,17 @@
-function mostrarMensagem(mensagem: string | number): object | string | number {
-    return mensagem;
+function mostrarMensagem(texto: string | number | object): boolean {
+
+    console.log(texto);
+
+    return true;
+
 }
 
-console.log(mostrarMensagem("Aprendendo funções com TypeScript"));
-console.log(mostrarMensagem(123456));
+console.log(mostrarMensagem("Hcode"));
+console.log(mostrarMensagem(100));
+console.log(mostrarMensagem({ url: "https://hcode.com.br"}));
 
-const show = (code: number): string => {
+const show = (codigo: number): number | Date | object => {
 
-    return "";
+    return new Date();
 
 }
